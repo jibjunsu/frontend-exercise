@@ -15,7 +15,7 @@ export class AppComponent {
     constructor(readonly dialogService: NxDialogService) {
         this.formGroup = new UntypedFormBuilder().group({
             name: ['', Validators.required],
-            items: ['', Validators.required],
+            // items: ['', Validators.required],
             email: ['', [Validators.email, Validators.required]],
             consent: [false, Validators.requiredTrue],
         });

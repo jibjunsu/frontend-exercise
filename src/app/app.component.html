@@ -1,6 +1,6 @@
-<h1 nxHeadline="section">Aquila Insurance App</h1>
+<h1 nxHeadline="section">Training Survey</h1>
 
-<nx-message *ngIf="formGroup.invalid" nxContext="info" class="nx-margin-top-s"> Please fill out your application details. </nx-message>
+<nx-message *ngIf="formGroup.invalid" nxContext="info" class="nx-margin-top-s"> Please provide your feedback. </nx-message>
 
 <form [formGroup]="formGroup" class="form-example nx-margin-top-s">
     <div nxLayout="grid">
@@ -12,7 +12,7 @@
                 </nx-formfield>
             </div>
 
-            <div nxCol="12,12,6">
+            <!-- <div nxCol="12,12,6">
                 <nx-formfield nxLabel="Number of items">
                     <nx-dropdown formControlName="items">
                         <nx-dropdown-item nxValue="1">1</nx-dropdown-item>
@@ -21,7 +21,7 @@
                     </nx-dropdown>
                     <nx-error nxFormfieldError> Please select an option. </nx-error>
                 </nx-formfield>
-            </div>
+            </div> -->
         </div>
         <div nxRow>
             <div nxCol="12,12,6">
@@ -35,12 +35,20 @@
         </div>
         <div nxRow>
             <div nxCol="12">
+                <h2 >How satisfied are you with this course?</h2>
+                <nx-rating nxStartLabel="poor" nxEndLabel="great"></nx-rating>
+            </div>
+        </div>
+        <br />
+        <div nxRow>
+            <div nxCol="12,6">
                 <nx-checkbox class="nx-margin-bottom-s" formControlName="consent"
-                    >I have read and understood
+                >I have read and understood
                     <a nxPlainButton (click)="openConsentDialog()">the disclaimer and conditions.</a>
                 </nx-checkbox>
             </div>
         </div>
+        <br />
         <div nxRow>
             <div nxCol="12,6">
                 <button nxButton type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
@@ -50,7 +58,7 @@
 </form>
 
 <footer nx-footer>
-    <nx-footer-copyright> &copy; Allianz </nx-footer-copyright>
+    <nx-footer-copyright> &copy; Allianz 2022 </nx-footer-copyright>
 </footer>
 
 <nx-popover #popoverEmail>
