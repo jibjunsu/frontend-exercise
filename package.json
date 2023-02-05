@@ -11,7 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.3",
-    "@angular/cdk": "^14.0.0",
+    "@angular/cdk": "^15.1.3",
     "@angular/common": "^15.1.3",
     "@angular/compiler": "^15.1.3",
     "@angular/core": "^15.1.3",
@@ -19,7 +19,7 @@
     "@angular/platform-browser": "^15.1.3",
     "@angular/platform-browser-dynamic": "^15.1.3",
     "@angular/router": "^15.1.3",
-    "@aposin/ng-aquila": "^14.1.0",
+    "@aposin/ng-aquila": "^15.0.0",
     "i18n-iso-countries": "^6.8.0",
     "iban": "^0.0.14",
     "moment": "^2.29.1",
