@@ -28,8 +28,15 @@
                 <nx-formfield nxLabel="E-Mail">
                     <input nxInput formControlName="email" />
 
-                    <nx-icon nxFormfieldAppendix name="info-circle-o" [nxPopoverTriggerFor]="popoverEmail" nxPopoverTrigger="hover"> </nx-icon>
+                    <!-- <nx-icon nxFormfieldAppendix name="info-circle-o" [nxPopoverTriggerFor]="popoverEmail" nxPopoverTrigger="hover"> </nx-icon> -->
                     <nx-error nxFormfieldError> Please provide a valid email address. </nx-error>
+                </nx-formfield>
+            </div>
+
+            <div nxCol="12,12,6">
+                <nx-formfield nxLabel="Phone">
+                    <nx-phone-input countryCode="TH" formControlName="phone"></nx-phone-input>
+                    <nx-error nxFormfieldError> Please provide a valid phone number. </nx-error>
                 </nx-formfield>
             </div>
         </div>
@@ -43,7 +50,7 @@
         </div>
         <div nxRow>
             <div nxCol="12,6">
-                <button nxButton type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
+                <button nxButton="cta" type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
             </div>
         </div>
     </div>
