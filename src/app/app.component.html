@@ -1,9 +1,18 @@
-<h1 nxHeadline="section">Aquila Insurance App</h1>
-
-<nx-message *ngIf="formGroup.invalid" nxContext="info" class="nx-margin-top-s"> Please fill out your application details. </nx-message>
+<nx-small-stage class="nx-margin-bottom-m" appearance="expert"> 
+    <nx-small-stage-image nxSmallStageImageEnd
+        src="/assets/illustration.svg"></nx-small-stage-image>
+    <h2 nxHeadline="subsection" class="nx-font-weight-regular"> Aquila Insurance App </h2>
+</nx-small-stage>
 
 <form [formGroup]="formGroup" class="form-example nx-margin-top-s">
     <div nxLayout="grid">
+        <div nxRow>
+            <div nxCol="12">
+              <h2 nxHeadline="subsection-small" class="nx-font-weight-light nx-margin-bottom-2m">
+                Hello new coder :)
+              </h2>
+            </div>
+        </div>
         <div nxRow>
             <div nxCol="12,12,6">
                 <nx-formfield nxLabel="Your Name">
@@ -28,7 +37,7 @@
                 <nx-formfield nxLabel="E-Mail">
                     <input nxInput formControlName="email" />
 
-                    <nx-icon nxFormfieldAppendix name="info-circle-o" [nxPopoverTriggerFor]="popoverEmail" nxPopoverTrigger="hover"> </nx-icon>
+                    <nx-icon nxFormfieldAppendix name="info-circle" [nxPopoverTriggerFor]="popoverEmail" nxPopoverTrigger="hover"> </nx-icon>
                     <nx-error nxFormfieldError> Please provide a valid email address. </nx-error>
                 </nx-formfield>
             </div>
@@ -43,7 +52,7 @@
         </div>
         <div nxRow>
             <div nxCol="12,6">
-                <button nxButton type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
+                <button nxButton="primary danger" type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
             </div>
         </div>
     </div>
