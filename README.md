@@ -5,7 +5,7 @@ In this exercise, you will learn to code without any prior experience by making 
 ## Prerequisite
 https://github.com/jibjunsu/frontend-exercise/wiki/Building-your-first-web-application#prerequisites-beginner
 
-## Running an existing project
+## Running the existing project
 TBD
 
 ## Let's make some changes
