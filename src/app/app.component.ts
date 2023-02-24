@@ -17,6 +17,7 @@ export class AppComponent {
             name: ['', Validators.required],
             items: ['', Validators.required],
             email: ['', [Validators.email, Validators.required]],
+            // phone: ['', Validators.required],
             consent: [false, Validators.requiredTrue],
         });
     }

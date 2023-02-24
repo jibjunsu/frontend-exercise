@@ -10,6 +10,7 @@
             <div nxCol="12">
               <h2 nxHeadline="subsection-small" class="nx-font-weight-light nx-margin-bottom-2m">
                 Hello new coder :)
+                <!-- Your application details -->
               </h2>
             </div>
         </div>
@@ -41,6 +42,12 @@
                     <nx-error nxFormfieldError> Please provide a valid email address. </nx-error>
                 </nx-formfield>
             </div>
+            <!-- <div nxCol="12,12,6">
+                <nx-formfield nxLabel="Phone">
+                    <nx-phone-input countryCode="TH" formControlName="phone"></nx-phone-input>
+                    <nx-error nxFormfieldError> Please provide a valid phone number. </nx-error>
+                </nx-formfield>
+            </div> -->
         </div>
         <div nxRow>
             <div nxCol="12">
@@ -53,6 +60,7 @@
         <div nxRow>
             <div nxCol="12,6">
                 <button nxButton="primary danger" type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button>
+                <!-- <button nxButton="cta" type="submit" (click)="openSubmitDialog()" [disabled]="formGroup.invalid">Submit</button> -->
             </div>
         </div>
     </div>

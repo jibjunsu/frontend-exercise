@@ -19,6 +19,7 @@ import { NxMessageModule } from '@aposin/ng-aquila/message';
 import { NxModalModule } from '@aposin/ng-aquila/modal';
 import { NxOverlayModule } from '@aposin/ng-aquila/overlay';
 import { NxPopoverModule } from '@aposin/ng-aquila/popover';
+// import { NxPhoneInputModule } from '@aposin/ng-aquila/phone-input';
 import { NxSmallStageModule } from '@aposin/ng-aquila/small-stage';
 
 import { AppComponent } from './app.component';
@@ -48,6 +49,7 @@ import { AppComponent } from './app.component';
         NxModalModule,
         NxOverlayModule,
         NxPopoverModule,
+        // NxPhoneInputModule,
         NxSmallStageModule,
     ],
     bootstrap: [AppComponent],
